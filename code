@@ -1,0 +1,17 @@
+#include <iostream>
+
+typedef unsigned long long ull;
+
+int main()
+{
+    ull n, c, r;
+    std::cin >> n >> c >> r;
+    
+    ull m = 1ULL * n / c * c + r;
+    
+    if(m > n)
+        std::cout << m;
+    else
+        std::cout << m + c;
+    return 0;
+}
